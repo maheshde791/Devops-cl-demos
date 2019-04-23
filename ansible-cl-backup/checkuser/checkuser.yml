@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: checking_user
+      action: usercheck username=root
+      register: usercheck_output
+
+    - debug: var=usercheck_output

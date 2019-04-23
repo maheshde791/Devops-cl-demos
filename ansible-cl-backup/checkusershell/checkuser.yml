@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: checking_user_shell
+      action: usershellcheck username=root
+      register: usershellcheck_output
+
+    - debug: var=usershellcheck_output

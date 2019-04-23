@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: 'Invoking uptime module'
+      action: uptime
+      register: uptime_output
+
+    - debug: var=uptime_output 
