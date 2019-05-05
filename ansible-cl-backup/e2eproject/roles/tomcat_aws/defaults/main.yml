@@ -1,0 +1,6 @@
+---
+# defaults file for tomcat_aws
+region: us-east-1
+instance_type: t2.micro
+ami:  ami-011b3ccf1bd6db744 # Redhat
+keypair: dmahesh-to-pri # pem file name
